@@ -1,10 +1,9 @@
-import { REGISTER } from "./actions";
-
+import { LOGIN, REGISTER } from "./actions";
 
 const initialState = {
   users: [],
-  user: {}
-}
+  user: {},
+};
 
 function rootReducer(state = initialState, action) {
   switch (action.type) {
@@ -13,11 +12,17 @@ function rootReducer(state = initialState, action) {
       return {
         ...state,
         users: [...state.users, action.payload],
-        user: action.payload
+        user: action.payload,
+      };
+
+    case LOGIN:
+      return {
+        ...state,
+        user: state.users.filter(user => user.email === action.payload.email)[0]
       }
-    
-      default:
-        return state;
+
+    default:
+      return state;
   }
 }
 

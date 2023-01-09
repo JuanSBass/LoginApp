@@ -1,4 +1,5 @@
 export const REGISTER = "REGISTER";
+export const LOGIN = "LOGIN";
 let idCounter = 0;
 
 export const register = (user) => {
@@ -14,4 +15,13 @@ export const register = (user) => {
       payload: {...user, id: ++idCounter}
     })
   }
+};
+
+export const login = (user) => {
+  return function (dispatch) {
+    dispatch({
+      type: LOGIN,
+      payload: user
+    })
+  };
 };

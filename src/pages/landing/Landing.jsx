@@ -19,10 +19,12 @@ const Landing = () => {
           </Link>
         </div>
         <div>
-          <Button color="dark">
-            <HiLogin className="mr-2 h-5 w-5" />
-            Entrar
-          </Button>
+          <Link to="/login">
+            <Button color="dark">
+              <HiLogin className="mr-2 h-5 w-5" />
+              Entrar
+            </Button>
+          </Link>
         </div>
       </main>
     </div>
