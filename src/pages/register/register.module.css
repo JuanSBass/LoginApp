@@ -60,3 +60,7 @@ form {
 .logo {
   height: 3rem;
 }
+
+.errores {
+  color: red;
+}
