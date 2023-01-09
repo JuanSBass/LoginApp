@@ -1,5 +1,6 @@
 import { Button } from "flowbite-react";
-import { HiLogin, HiTable } from "react-icons/hi";
+import { HiTable } from "react-icons/hi";
+import { BiLogIn } from "react-icons/bi"
 import { Link } from "react-router-dom";
 import styles from "./landing.module.css";
 
@@ -21,7 +22,7 @@ const Landing = () => {
         <div>
           <Link to="/login">
             <Button color="dark">
-              <HiLogin className="mr-2 h-5 w-5" />
+              <BiLogIn className="mr-2 h-5 w-5" />
               Entrar
             </Button>
           </Link>
