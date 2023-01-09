@@ -1,5 +1,5 @@
 .card {
-  margin: auto;
+  margin: 10% auto;
  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
  width: 380px;
  height: 508px;
@@ -15,7 +15,7 @@
 .card::after {
  position: absolute;
  content: "";
- top: 30px;
+ top: 60px;
  left: 0;
  right: 0;
  z-index: -1;
